@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Volume Balok 📦</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f0f8ff, #add8e6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #1e90ff;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+        input[type="number"]:focus {
+            border-color: #1e90ff;
+            outline: none;
+        }
+        button {
+            background-color: #1e90ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        button:hover {
+            background-color: #007bb5;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📦 Balok</h1>
+        <p>Rumus Volume (V) = Panjang × Lebar × Tinggi</p>
+        <div class="input-group">
+            <label for="panjang">Panjang:</label>
+            <input type="number" id="panjang" placeholder="Masukkan Panjang" required>
+        </div>
+        <div class="input-group">
+            <label for="lebar">Lebar:</label>
+            <input type="number" id="lebar" placeholder="Masukkan Lebar" required>
+        </div>
+        <div class="input-group">
+            <label for="tinggi">Tinggi:</label>
+            <input type="number" id="tinggi" placeholder="Masukkan Tinggi" required>
+        </div>
+        <button onclick="hitungVolumeBalok()">Hitung Volume</button>
+    </div>
+    
+    <script src="volume_balok.js"></script>
+</body>
+</html>
